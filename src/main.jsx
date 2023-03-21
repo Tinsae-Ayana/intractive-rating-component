@@ -9,7 +9,7 @@ import { RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter(
    createRoutesFromElements(
-      <Route path='/' element={<App></App>}>
+      <Route path='/intractive-rating-component' element={<App></App>}>
          <Route index={true} element={<RateCard></RateCard>}></Route>
          <Route path=':rateValue' loader={loader} element={<ThankYouCard></ThankYouCard>}></Route>
       </Route>
